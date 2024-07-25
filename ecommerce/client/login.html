@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    
+    img{
+        height:350px;
+        width:350px;
+        background-color: rgb(178, 223, 208);
+        margin-top: 40px;
+        padding: 10px;
+        border-radius: 6px;
+        left: 0;
+    }
+   
+    .para{
+        word-spacing: 2px;
+        font-size: 18px;
+        font-family: Georgia ;
+    }
+    .bold{
+        font-size: 25px;
+        font-weight: 1500px;
+        color:blue;
+        text-shadow: 2px 2px 2px black;
+        
+    }
+    .foo{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(163, 208, 223);
+        height: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .oo{
+        padding: 3px;
+        color: rgba(8, 8, 8, 0.884);
+    }
+    .oo:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: blue;
+    }
+    .sp{
+        color: black;
+        padding-left: 18px;   
+    }
+    .form{
+       margin-left: 92px; 
+       margin-top: 50px;
+       border: 8px solid grey;
+       width: 390px;
+       padding: 10px;
+       border-radius: 12px;
+       }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img{
+        margin-top: 2px;
+    }
+    .but{
+      color: brown;
+    }
+    .but:hover{
+        cursor: pointer;
+    }
+    .reg{
+        color: blue;
+    }
+    .reg:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+  body { height: 100%; }
+   body {
+  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+  overflow: hidden;
+}
+
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -9px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -9px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+   
+     
+   </style>
+</head>
+<body>
+    <div class="box">
+        <div class="img"><img src="utsav.jpg" alt="" ></div>
+     <div class="form">
+        <h1 style="text-transform: uppercase;font-family: georgia;text-shadow: 3px 2px grey;">Login</h1>
+      <form action=" " method="post">
+        <label style="font-family: Georgia, 'Times New Roman', Times, serif;">User name:</label>
+        <input type="text" id="fname" name="fname"  ><br><br>
+        <label style="font-family: Georgia, 'Times New Roman', Times, serif;"  >Password :</label>
+        <input type="password" id="lname" name="lname"><br><br>
+       <button  style="font-family: Georgia, 'Times New Roman', Times, serif;"class="but">Submit</button>
+       </form>
+       <hr>
+       <p  class="pa">Dont have an account? <span class="reg" ><a href="register.php">Register</a></span></p>
+     </div>
+      
+       
+        <p class="para">
+            Welcome to <span class="bold">Utsav</span>, the ultimate destination for all your shopping needs! Our platform 
+            is designed to provide you with a personalized, secure, and convenient shopping experience. 
+            With a vast array of products ranging from fashion to home decor, we strive to make your 
+            shopping journey hassle free and enjoyable. Our dedicated team of experts is here to assist
+            you in your product selections and to make sure your shopping experience with us is nothing 
+            short of perfect. Shop with us today and experience the Utsav difference!
+        </p>
+    </div>
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+</body>
+<footer class="foo">
+   <h4 > <span  class="sp">Email us on:</span> <a class="oo" href="mailto:peddabeeramadhuri@gmail.com">peddabeeramadhuri@gmail.com</a>  </h4>
+   <h4 class="oo"> <a href="https://www.linkedin.com/in/madhuri-p-b489b1223" target="_blank" rel="noopener noreferrer"></a>linkedin</h4>
+   <h4 class="oo"> <a href="https://instagram.com/madhu.ri343?igshid=ZDdkNTZiNTM=" target="_blank"></a>Instagram</h4> 
+   <h4 class="oo"> <a href="https://www.facebook.com/profile.php?id=100086118706446&mibextid=ZbWKwL" target="_blank"></a>Facebook</h4> 
+</footer>
+</html>

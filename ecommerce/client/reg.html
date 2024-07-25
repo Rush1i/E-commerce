@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      *{
+        background-image: url(road.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+        
+      }
+     .main{
+      position: absolute;
+      background-color: antiquewhite;
+      top: 20%;
+      padding: 30px 30px 50px;
+      text-align: center;
+      border-radius: 10px;
+      background: #f5f0f0;
+      left: 40%;
+      box-shadow: 10px 10px  rgb(160, 142, 142);
+      
+     }
+     form input{
+      width:300px;
+      height: 30px;
+      outline: none ;
+      border: none;
+      color: rgb(226, 47, 47);
+      backdrop-filter: blur(5px);
+      
+     }
+     .om,.on{
+      padding: 5px;
+      background: #fff;
+      border: 2px solid #ff22;
+      border-radius: 10px;
+     }
+    .h{
+      background: #f5f0f0;
+      font-size: 30px;
+      margin-top: 2px;
+    }
+    .p{
+      background: #fff;
+    }
+    .on:hover{
+      background: #ff22;
+    }
+    .u{
+      background: #f5f0f0;
+    }
+    .spa:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .ha{
+      background: none;
+    }
+   </style>
+</head>
+<body>
+   <div class="head">
+    <h1 class="ha"> UTSAV</h1>
+   </div>
+    <div class="main">
+        <form action="">
+            <h3 class="h">Login </h3>
+            <input type="text" name='id' class='om'placeholder="Enter your USERID">
+            <br> <br>
+            <input type="password" name="password" class="om" placeholder="Enter your password">
+            <br>
+            <br>
+            <input type="submit" placeholder="submit" class="on" >
+        </form>
+        <h3 class="u"> Dont have an account? <span class='spa'style="background: #f5f0f0; color: blue;"> Register!</span></h3>
+    </div>
+</body>
+</html>
